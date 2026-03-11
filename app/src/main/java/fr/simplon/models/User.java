@@ -1,5 +1,11 @@
+package fr.simplon.models;
+
+import java.util.ArrayList;
+import java.util.List;
+
 public class User {
-    private int nbUsers = 0;
+    private static int nbUsers = 0;
+    private static List<User> allUsers = new ArrayList<>();
 
     private String username;
     private String password;
@@ -15,6 +21,7 @@ public class User {
         this.password = password;
         this.email = email;
         this.id = ++nbUsers;
+        allUsers.add(this);
     }
 
     public int getId() {
@@ -65,4 +72,9 @@ public class User {
         this.posts = posts;
     }
 
+    public static void showAllUsers() {
+        for (User user : allUsers) {
+            System.out.println("User : " + user.username + " | ID : " + user.id);
+        }
+    }
 }

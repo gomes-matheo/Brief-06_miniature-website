@@ -1,6 +1,7 @@
 <%@ 
 page contentType="text/html;charset=UTF-8" language = "java"
 %>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -31,7 +32,7 @@ page contentType="text/html;charset=UTF-8" language = "java"
         <form method="dialog">
             <button>X</button>
         </form>
-        <form action="/login" method="post">
+        <form action="/register" method="post">
             <input type="text" name="username" placeholder="Entrez votre nom d'utilisateur">
             <input type="email" name="email" placeholder="Entrez votre adresse mail">
             <input type="password" name="password" placeholder="Entrez votre mot de passe">
