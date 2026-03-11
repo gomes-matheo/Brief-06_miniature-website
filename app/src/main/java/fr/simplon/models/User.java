@@ -40,12 +40,12 @@ public class User {
         return nbUsers;
     }
 
-    public void setNbUsers(int nbUsers) {
-        this.nbUsers = nbUsers;
-    }
-
     public String getUsername() {
         return username;
+    }
+
+    public String getPassword() {
+        return password;
     }
 
     public void setUsername(String username) {
